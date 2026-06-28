@@ -2,6 +2,7 @@
 A full-stack Project Management Portal for creating, managing, and tracking tasks.
 
 Built using:
+
     Frontend: React.js + Vite
     Backend: Node.js + Express.js
     Database: MongoDB
@@ -25,7 +26,7 @@ The application allows users to create tasks, update task status, filter tasks, 
     │   │   ├── App.jsx
     │   │   └── main.jsx
     │   └── package.json
-
+    |
     └── README.md
 
     
