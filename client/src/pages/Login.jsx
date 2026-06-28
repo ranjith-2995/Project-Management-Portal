@@ -37,9 +37,34 @@ export default function Login() {
           {/* Left side description */}
           <div className="auth-layout__info">
             <div className="auth-layout__icon">✦</div>
-            <h1 className="auth-layout__title">Welcome back</h1>
-            <p className="auth-layout__subtitle">Sign in to access your tasks</p>
-
+            <h1 className="auth-layout__title">Organize. Prioritize. Achieve.</h1>
+            <p className="auth-layout__subtitle">Welcome back</p>
+            <p className="auth-layout__desc">
+              Sign in to access your tasks, track progress and get things done.
+            </p>
+            <div className="auth-layout__features">
+              <div className="auth-layout__feature">
+                <div className="auth-layout__feature-icon">✓</div>
+                <div className="auth-layout__feature-text">
+                  <h3>Stay Organized</h3>
+                  <p>Keep all your tasks in one place.</p>
+                </div>
+              </div>
+              <div className="auth-layout__feature">
+                <div className="auth-layout__feature-icon">⏳</div>
+                <div className="auth-layout__feature-text">
+                  <h3>Track Progress</h3>
+                  <p>Monitor your productivity.</p>
+                </div>
+              </div>
+              <div className="auth-layout__feature">
+                <div className="auth-layout__feature-icon">✦</div>
+                <div className="auth-layout__feature-text">
+                  <h3>Collaborate</h3>
+                  <p>Work together seamlessly.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
 
