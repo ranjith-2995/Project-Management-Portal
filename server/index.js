@@ -12,16 +12,29 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://127.0.0.1:5173',
   'https://taskflow-project-management-ten.vercel.app',
-  'https://project-management-portal-ka8q.onrender.com'
+  'https://project-management-portal-ka8q.onrender.com',
+  'https://client-xsi10ejth-ranjith-tech.vercel.app',
+  'https://project-management-portal-leb4.vercel.app'
 ];
 
 // ─── Middleware ───────────────────────────────────────────────────────────────
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
+    if (!origin) {
       callback(null, true);
       return;
     }
+
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    if (origin.endsWith('.vercel.app')) {
+      callback(null, true);
+      return;
+    }
+
     callback(new Error('Not allowed by CORS'));
   },
   credentials: true
