@@ -893,10 +893,10 @@ input, textarea, select {
 
 .auth-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-3xl);
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  gap: 56px;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -956,7 +956,7 @@ input, textarea, select {
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
-  padding: var(--spacing-md);
+  padding: 14px 16px;
   background: var(--bg-glass);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
