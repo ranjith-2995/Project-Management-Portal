@@ -38,7 +38,7 @@ export default function Login() {
           <div className="auth-layout__info">
             <div className="auth-layout__icon">✦</div>
             <h1 className="auth-layout__subtitle">Welcome back</h1>
-            <p className="auth-layout__title">Organize. Prioritize. Achieve.</p> 
+            <p className="auth-layout__title auth-layout__title--small">Organize. Prioritize. Achieve.</p>
             <p className="auth-layout__desc">
               Sign in to access your tasks, track progress and get things done.
             </p>
