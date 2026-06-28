@@ -154,9 +154,7 @@ export default function Dashboard() {
                 My <span>Tasks</span>
               </h1>
               <p className="dashboard-header__subtitle">
-                {loading
-                  ? 'Fetching your tasks…'
-                  : `${stats.pending} pending · ${stats['in-progress']} in progress · ${stats.completed} completed · ${completionPct}% done`}
+                {loading ? 'Fetching your tasks…' : 'Manage your work and keep progress moving.'}
               </p>
             </div>
             {!showAdd && (
