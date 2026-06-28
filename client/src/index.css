@@ -517,6 +517,20 @@ input, textarea, select {
   text-transform: uppercase;
 }
 
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.filter-bar__label {
+  margin-right: 4px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
 .filter-pill {
   display: inline-flex;
   align-items: center;
@@ -555,6 +569,14 @@ input, textarea, select {
 
 .filter-pill.active .filter-pill__count {
   background: rgba(124, 58, 237, 0.4);
+}
+
+.view-toggle,
+.filter-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
 }
 
 .search-bar {
