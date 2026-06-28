@@ -42,31 +42,7 @@ export default function Login() {
             <p className="auth-layout__desc">
               Sign in to access your tasks, track progress and get things done.
             </p>
-            <div className="auth-layout__features">
-              <div className="auth-layout__feature">
-                <div className="auth-layout__feature-icon">✓</div>
-                <div className="auth-layout__feature-text">
-                  <h3>Stay Organized</h3>
-                  <p>Keep all your tasks in one place.</p>
-                </div>
-              </div>
-              <div className="auth-layout__feature">
-                <div className="auth-layout__feature-icon">⏳</div>
-                <div className="auth-layout__feature-text">
-                  <h3>Track Progress</h3>
-                  <p>Monitor your productivity.</p>
-                </div>
-              </div>
-              <div className="auth-layout__feature">
-                <div className="auth-layout__feature-icon">✦</div>
-                <div className="auth-layout__feature-text">
-                  <h3>Collaborate</h3>
-                  <p>Work together seamlessly.</p>
-                </div>
-              </div>
-            </div>
           </div>
-
 
           {/* Right side login form */}
           <div className="auth-card" style={{ width: '100%' }}>
