@@ -982,6 +982,11 @@ input, textarea, select {
   overflow: hidden;
 }
 
+.auth-card--register {
+  width: min(100%, 560px);
+  margin: 0 auto;
+}
+
 .auth-card::before {
   content: '';
   position: absolute;

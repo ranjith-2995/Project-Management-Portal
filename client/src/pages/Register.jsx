@@ -36,7 +36,7 @@ export default function Register() {
   return (
     <main className="page auth-page">
       <div className="container">
-        <div className="auth-card">
+        <div className="auth-card auth-card--register">
           <div className="auth-card__header">
             <div className="auth-card__icon">✦</div>
             <h1 className="auth-card__title">Create account</h1>
