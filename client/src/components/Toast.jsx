@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react';
-
 export default function Toast({ toasts }) {
   return (
     <div className="toast-container" aria-live="polite">

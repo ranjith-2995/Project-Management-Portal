@@ -116,9 +116,9 @@ export default function Dashboard() {
       const updated = await updateTask(id, updates);
       setTasks((prev) => prev.map((t) => (t.id === id ? updated : t)));
       addToast('Task updated successfully.', 'success');
-    } catch (err) {
-      addToast(err?.response?.data?.message || 'Failed to update task.', 'error');
-      throw err;
+    } catch {
+      addToast('Failed to update task.', 'error');
+      throw new Error('Failed to update task.');
     }
   };
 
@@ -140,8 +140,6 @@ export default function Dashboard() {
     setSearch('');
     refreshAll();
   };
-
-  const completionPct = stats.all > 0 ? Math.round((stats.completed / stats.all) * 100) : 0;
 
   return (
     <>

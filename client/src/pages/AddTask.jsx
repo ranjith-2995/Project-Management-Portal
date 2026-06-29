@@ -137,7 +137,7 @@ export default function AddTask({ onSuccess, onCancel }) {
         <div className="form-group">
           <label className="form-label">Priority</label>
           <div className="priority-options">
-            {PRIORITY_OPTIONS.map(({ value, label, icon, desc }) => (
+            {PRIORITY_OPTIONS.map(({ value, label, desc }) => (
               <label
                 key={value}
                 className={`priority-option ${

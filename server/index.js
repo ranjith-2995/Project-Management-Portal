@@ -175,7 +175,7 @@ app.put('/api/tasks/:id', protect, async (req, res) => {
         startDate: startDate ? new Date(startDate) : null,
         dueDate: dueDate ? new Date(dueDate) : null
       },
-      { new: true, runValidators: true }
+      { returnDocument: 'after', runValidators: true }
     );
 
     if (!task) {
